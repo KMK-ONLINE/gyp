@@ -1867,6 +1867,10 @@ def GenerateOutputForConfig(target_list, target_dicts, data, params,
       ld = os.path.join(build_to_root, value)
     if key == 'LD.host':
       ld_host = os.path.join(build_to_root, value)
+    if key == 'LDXX':
+      ldxx = os.path.join(build_to_root, value)
+    if key == 'LDXX.host':
+      ldxx_host = os.path.join(build_to_root, value)
     if key == 'NM':
       nm = os.path.join(build_to_root, value)
     if key == 'NM.host':
